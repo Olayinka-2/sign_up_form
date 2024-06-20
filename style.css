@@ -25,10 +25,11 @@ body {
 .container {
    height: 100%;
    display: flex;
+   width: 100vw;
 }
 
 .image-section {
-   width: 35%;
+   width: 30%;
    background-image: url(./background.jpg);
    background-size: 100%;
    height: min(100vh, 100%);
@@ -41,7 +42,7 @@ body {
 }
 
 .form-section {
-   width: 65%;
+   width: 70%;
 }
 
 .logo {
