@@ -76,7 +76,7 @@ body {
 }
 
 .form-header {
-   background: rgb(216, 211, 203);
+   background: #f5f3f0;
    height: 31.5vh;
    width: 100%;
 }
@@ -87,7 +87,7 @@ body {
 }
 
 .form-footer {
-   background: rgb(216, 211, 203);
+   background: #f5f3f0;
    height: 31.5vh;
 }
 
