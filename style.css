@@ -132,6 +132,16 @@ body {
    width: 40ch;
 }
 
+.form-main input:focus:invalid {
+   border: 1px solid #d61208;
+   color: #d61208;
+}
+
+.form-main input:focus:valid {
+   border: 1px solid #2afd2a;
+   color: #2afd2a;
+}
+
 .form-control input:focus {
    border-color: blue;
    box-shadow: 2px 3px 3px rgb(235, 233, 233);
@@ -170,6 +180,22 @@ body {
    color: #596D48;
    text-decoration: none;
 }
+
+.error {
+   display: none;
+}
+
+.form-control input[type="password"]:focus:invalid + .error {
+   font-size: 1rem;
+   color: #d61208;
+   display: block;
+}
+
+.form-control input[type="password"]:valid + .error {
+   display: none;
+}
+
+
 
 
 

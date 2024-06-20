@@ -29,38 +29,39 @@
                <div class="form-control">
                   <div>
                      <label for="first-name">FIRST NAME</label>
-                     <input type="text" name="firstName" id="first-name">
+                     <input type="text" name="firstName" id="first-name" required placeholder="First name">
                   </div>
                   <div>
                      <label for="last-name">LAST NAME</label>
-                     <input type="text" name="lastName" id="first-name">
+                     <input type="text" name="lastName" id="first-name" required placeholder="Last name">
                   </div>
                </div>
 
                <div class="form-control">
                   <div>
                      <label for="email">Email</label>
-                     <input type="email" name="Email" id="email">
+                     <input type="email" name="Email" id="email" required pattern="/[a-zA-Z0-9]+\@[a-zA-Z0-9]\.[a-z]{2,4}$/" placeholder="oto@gmail.com">
                   </div>
                   <div>
                      <label for="tel">PHONE NUMBER</label>
-                     <input type="tel" name="telNumber" id="tel">
+                     <input type="tel" name="telNumber" id="tel" pattern="\d{7,15}"  required>
                   </div>
                </div>
                <div class="form-control">
                   <div>
                      <label for="password">PASSWORD</label>
-                     <input type="password" name="password1" id="password">
-                     <div class="error"></div>
+                     <input type="password" name="password1" id="password" pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}" 
+                     required>
+                     <div class="error">Password characters must be greater that 8</div>
                   </div>
                   <div>
                      <label for="password2">CONFIRM PASSWORD</label>
-                     <input type="password" name="password2" id="passwor2">
-                     <div class="error"></div>
+                     <input type="password" name="password2" id="passwor2"  pattern="(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}" 
+                     required>
+                     <div class="error">Password characters must be greater that 8</div>
                   </div>
                   
                </div>
-            </form>
 
          </div>
          <div class="form-footer">
@@ -69,6 +70,7 @@
                <p>Already have an acount? <a href="/">Log in</a></p>
             </div>
          </div>
+      </form>
       </section>
    </div>
 </body>
