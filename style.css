@@ -6,11 +6,16 @@
 
 @font-face {
    font-family: "norse font";
-   src: url(./font/norse-bold-webfont.woff2);
+   src: url(./font/norse-bold-webfont.woff2) format(woff2);
+}
+@font-face {
+   font-family: myFont;
+   src: url(./font/abel-regular-webfont.woff2) format(woff2);
 }
 
 :root {
    font-size: 62.5%;
+   font-family: myFont, sans-serif;
 }
 
 body {
@@ -19,6 +24,7 @@ body {
 
 .container {
    height: 100%;
+   display: flex;
 }
 
 .image-section {
@@ -67,4 +73,103 @@ body {
 .credit-paragraph a {
    color: whitesmoke;
 }
+
+.form-header {
+   background: rgb(216, 211, 203);
+   height: 31.5vh;
+   width: 100%;
+}
+
+.form-main {
+   background-color: whitesmoke;
+   height: calc(100vh - 63vh);
+}
+
+.form-footer {
+   background: rgb(216, 211, 203);
+   height: 31.5vh;
+}
+
+.form-header {
+   font-size: 1.6rem;
+   font-weight: 700;
+   padding: 2.5rem;
+   padding-right: 6rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   flex-wrap: wrap;
+}
+
+.form-header > div {
+   width: 70%;
+}
+.form-header p:last-child {
+   margin-top: 2rem;
+}
+
+.form-main form {
+   padding: 1.5rem 2.5rem 0;
+}
+
+.form-main h4 {
+   font-size: 1.6rem;
+   font-weight: 700;
+}
+
+.form-main .form-control {
+   display: flex;
+   column-gap: 3rem;
+   margin-top: 1rem;
+}
+.form-main input {
+   border: none;
+   outline: none;
+   padding: .3rem;
+   font-family: inherit;
+   border: 1px solid #E5E7EB;
+   border-radius: 4px;
+   width: 40ch;
+}
+
+.form-control input:focus {
+   border-color: blue;
+   box-shadow: 2px 3px 3px rgb(235, 233, 233);
+}
+
+.form-main label {
+   font-size: 1.2rem;
+   font-weight: bold;
+   letter-spacing: 1px;
+   display: block;
+}
+
+.form-footer {
+   padding: 2.5rem;
+   font-family: inherit;
+}
+
+.form-footer button {
+   padding: 1rem 3rem;
+   background: #596D48;
+   border: none;
+   color: whitesmoke;
+   font-family: inherit;
+   border-radius: 5px;
+   font-weight: bold;
+}
+
+.form-footer p {
+   font-size: 1.3rem;
+   font-weight: bold;
+   letter-spacing: 1px;
+   margin-top: 2rem;
+}
+
+.form-footer p a {
+   color: #596D48;
+   text-decoration: none;
+}
+
+
 
